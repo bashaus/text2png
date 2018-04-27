@@ -19,7 +19,7 @@ describe('text2png', () => {
         looksSame(
           text2png.apply(text2png, config),
           fs.readFileSync(path.join(__dirname, 'expected', fileName + '.png')),
-          { tolerance: 0.2, ignoreAntialiasing: true },
+          { ignoreAntialiasing: true },
           (error, match) => {
             if (error) reject(error);
 

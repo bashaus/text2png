@@ -1,6 +1,9 @@
 sudo: true
 language: node_js
-before_install: ./.travis-before_install.sh
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install build-essential g++
+  - sudo apt-get install libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev
 node_js:
   - stable
   - "4"
