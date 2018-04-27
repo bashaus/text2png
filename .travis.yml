@@ -1,5 +1,6 @@
-sudo: false
+sudo: true
 language: node_js
+before_install: ./.travis-before_install.sh
 node_js:
   - stable
   - "4"

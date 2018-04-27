@@ -1,3 +1,6 @@
 /examples/
 /node_modules/
 /npm-debug.log*
+.gitignore
+.travis.yml
+.travis-install.sh
