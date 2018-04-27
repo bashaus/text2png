@@ -11,7 +11,6 @@ const looksSame = require('looks-same');
 describe('text2png', () => {
   glob.sync(path.resolve(__dirname, 'testcases', '*.json')).forEach(filePath => {
     const fileName = path.basename(filePath, '.json');
-    console.log(fileName);
 
     it('matches ' + fileName, () => {
       const config = JSON.parse(fs.readFileSync(filePath));

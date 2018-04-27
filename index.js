@@ -119,17 +119,17 @@ const text2png = (text, options = {}) => {
 
     // Calculate X
     switch (options.textAlign) {
-      case "start":
-      case "left":
+      case 'start':
+      case 'left':
         x = lineProp.left + options.borderLeftWidth + options.paddingLeft;
         break;
 
-      case "end":
-      case "right":
+      case 'end':
+      case 'right':
         x = canvas.width - lineProp.left - options.borderRightWidth - options.paddingRight;
         break;
 
-      case "center":
+      case 'center':
         x = contentWidth / 2 + options.borderLeftWidth + options.paddingLeft;
         break;
     }
@@ -148,7 +148,7 @@ const text2png = (text, options = {}) => {
     case 'canvas':
       return canvas;
     default:
-      throw new Error(`output type:${options.output} is not supported.`)
+      throw new Error(`output type: ${options.output} is not supported.`);
   }
 };
 

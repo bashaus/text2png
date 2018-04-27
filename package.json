@@ -7,7 +7,7 @@
     "text2png": "./bin/text2png.js"
   },
   "scripts": {
-    "lint": "eslint **/*.js",
+    "lint": "eslint *.js **/*.js",
     "test": "jasmine && npm run lint"
   },
   "repository": {
